@@ -27,7 +27,6 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "custom",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Vitesse Dark",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   // "workbench.editor.tabCloseButton": "left",
@@ -37,8 +36,9 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "workbench.preferredLightColorTheme": "Vitesse Light",
+  "workbench.colorTheme": "Default Dark+",
+  // "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  // "workbench.preferredLightColorTheme": "Vitesse Light",
   "workbench.productIconTheme": "icons-carbon",
   // "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
@@ -221,5 +221,5 @@
     "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .htmlnanorc*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
-  },
+  }
 }
