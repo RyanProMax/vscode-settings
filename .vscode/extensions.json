@@ -2,18 +2,12 @@
   "recommendations": [
     // my extensions, ofc :P
     "antfu.browse-lite",
-    "antfu.iconify",
-    "antfu.vite",
     "lokalise.i18n-ally",
     // themes & icons
-    "antfu.icons-carbon",
-    "antfu.theme-vitesse",
-    "file-icons.file-icons",
     "sainnhe.gruvbox-material",
     // life savers!
     "dbaeumer.vscode-eslint",
     "johnsoncodehk.volar",
-    "GitHub.copilot",
     "usernamehw.errorlens",
     "streetsidesoftware.code-spell-checker",
     // up to you
