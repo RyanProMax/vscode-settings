@@ -2,12 +2,7 @@
   "recommendations": [
     // my extensions, ofc :P
     "antfu.browse-lite",
-    "lokalise.i18n-ally",
-    // themes & icons
-    "sainnhe.gruvbox-material",
-    // life savers!
     "dbaeumer.vscode-eslint",
-    "johnsoncodehk.volar",
     "usernamehw.errorlens",
     "streetsidesoftware.code-spell-checker",
     // up to you

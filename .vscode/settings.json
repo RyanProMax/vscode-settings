@@ -1,95 +1,106 @@
 {
-  "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.find.addExtraSpaceOnTop": false,
+  "editor.accessibilitySupport": "off", // 禁用编辑器无障碍支持
+  "editor.cursorSmoothCaretAnimation": "on", // 启用光标平滑动画效果
+  "editor.find.addExtraSpaceOnTop": false, // 查找控件顶部不添加额外空间
   // "editor.fontFamily": "Input Mono, Fira Code, monospace",
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
-  "editor.fontSize": 13.5,
-  "editor.glyphMargin": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.inlineSuggest.enabled": true,
-  "editor.lineNumbers": "interval",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "boundary",
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'", // 启用特定字体连字变体
+  "editor.fontSize": 13.5, // 编辑器字体大小
+  "editor.glyphMargin": true, // 显示字形边距(用于断点等)
+  "editor.guides.bracketPairs": "active", // 高亮显示匹配的括号对
+  "editor.inlineSuggest.enabled": true, // 启用内联代码建议
+  "editor.lineNumbers": "interval", // 行号显示方式(间隔显示)
+  // "editor.multiCursorModifier": "ctrlCmd",  // 多光标修改键设置
+  "editor.renderWhitespace": "boundary", // 只在边界处显示空白字符
+  "editor.suggestSelection": "first", // 建议列表默认选择第一项
+  "editor.tabSize": 2, // tab键缩进2个空格
+  "editor.unicodeHighlight.invisibleCharacters": false, // 不高亮显示不可见Unicode字符
+  // 保存时自动修复设置
   "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.fixAll.eslint": "always", // this allows ESLint to auto fix on save
-    "source.organizeImports": "never"
+    "source.fixAll": "never", // 不自动修复所有问题
+    "source.fixAll.eslint": "always", // 总是自动修复ESLint问题
+    "source.organizeImports": "never" // 不自动整理导入
   },
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  // "window.autoDetectColorScheme": true,
-  "window.autoDetectColorScheme": false,
-  "window.dialogStyle": "custom",
-  "window.titleBarStyle": "custom",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  // "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
-  "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Default Dark+",
-  // "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10,
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "extensions.ignoreRecommendations": true,
-  "files.eol": "\r\n",
-  "files.insertFinalNewline": true,
-  // "files.simpleDialog.enable": true,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.untrackedChanges": "separate",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.enabled": true,
-  "scm.diffDecorationsGutterWidth": 2,
-  "debug.onTaskErrors": "debugAnyway",
-  "diffEditor.ignoreTrimWhitespace": false,
+  // 资源管理器设置
+  "explorer.confirmDelete": false, // 删除文件时不确认
+  "explorer.confirmDragAndDrop": false, // 拖放文件时不确认
+  // 窗口设置
+  // "window.autoDetectColorScheme": true,  // 自动检测系统配色
+  "window.autoDetectColorScheme": false, // 禁用自动检测系统配色
+  "window.dialogStyle": "custom", // 使用自定义对话框样式
+  "window.titleBarStyle": "custom", // 使用自定义标题栏样式
+  // 工作台设置
+  "workbench.editor.closeOnFileDelete": true, // 文件被删除时关闭对应编辑器
+  "workbench.editor.highlightModifiedTabs": true, // 高亮显示已修改的标签页
+  // "workbench.editor.tabCloseButton": "left",  // 标签页关闭按钮位置
+  "workbench.editor.limit.enabled": true, // 启用编辑器数量限制
+  "workbench.editor.limit.perEditorGroup": true, // 每个编辑器组单独限制
+  "workbench.editor.limit.value": 5, // 每个编辑器组最多5个标签页
+  "workbench.list.smoothScrolling": true, // 启用列表平滑滚动
+  "workbench.colorTheme": "Default Dark+", // 使用Default Dark+主题
+  // "workbench.sideBar.location": "right",  // 侧边栏位置
+  "workbench.startupEditor": "newUntitledFile", // 启动时打开新无标题文件
+  "workbench.tree.expandMode": "singleClick", // 单击展开树形视图
+  "workbench.tree.indent": 10, // 树形视图缩进10px
+  // 扩展设置
+  "extensions.autoUpdate": "onlyEnabledExtensions", // 只自动更新已启用的扩展
+  "extensions.ignoreRecommendations": true, // 忽略扩展推荐
+  // 文件设置
+  "files.eol": "\r\n", // 使用CRLF作为行结束符
+  "files.insertFinalNewline": true, // 文件末尾自动添加空行
+  // "files.simpleDialog.enable": true,  // 简单对话框
+  // Git设置
+  "git.autofetch": true, // 自动获取远程变更
+  "git.confirmSync": false, // 同步前不确认
+  "git.enableSmartCommit": true, // 启用智能提交
+  "git.untrackedChanges": "separate", // 未跟踪变更单独显示
+  // 终端设置
+  "terminal.integrated.cursorBlinking": true, // 终端光标闪烁
+  "terminal.integrated.cursorStyle": "line", // 终端光标样式为线型
+  "terminal.integrated.fontWeight": "300", // 终端字体粗细
+  "terminal.integrated.persistentSessionReviveProcess": "never", // 不恢复持久会话
+  "terminal.integrated.tabs.enabled": true, // 启用终端标签页
+  // 源代码管理设置
+  "scm.diffDecorationsGutterWidth": 2, // 差异装饰器边距宽度
+  // 调试设置
+  "debug.onTaskErrors": "debugAnyway", // 任务出错时继续调试
+  // 搜索排除设置
   "search.exclude": {
-    "**/.git": true,
-    "**/.github": true,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true,
-    "**/tmp": true,
-    "**/yarn.lock": true
+    "**/.git": true, // 排除.git目录
+    "**/.github": true, // 排除.github目录
+    "**/.nuxt": true, // 排除.nuxt目录
+    "**/.output": true, // 排除.output目录
+    "**/.pnpm": true, // 排除.pnpm目录
+    "**/.vscode": true, // 排除.vscode目录
+    "**/.yarn": true, // 排除.yarn目录
+    "**/bower_components": true, // 排除bower_components目录
+    "**/dist/**": true, // 排除dist目录
+    "**/logs": true, // 排除logs目录
+    "**/node_modules": true, // 排除node_modules目录
+    "**/out/**": true, // 排除out目录
+    "**/package-lock.json": true, // 排除package-lock.json文件
+    "**/pnpm-lock.yaml": true, // 排除pnpm-lock.yaml文件
+    "**/tmp": true, // 排除tmp目录
+    "**/yarn.lock": true // 排除yarn.lock文件
   },
-  // Extension configs
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
+  // Emmet扩展设置
+  "emmet.showSuggestionsAsSnippets": true, // 将Emmet建议显示为代码片段
+  "emmet.triggerExpansionOnTab": false, // 禁用Tab键触发Emmet扩展
+  // Error Lens扩展设置
+  "errorLens.enabledDiagnosticLevels": [ // 启用的诊断级别
+    "warning", // 警告
+    "error" // 错误
   ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
+  "errorLens.excludeBySource": [ // 按来源排除的诊断
+    "cSpell", // 拼写检查
+    "Grammarly", // Grammarly
+    "eslint" // ESLint
   ],
   // ESLint config: https://github.com/antfu/eslint-config
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
+  "eslint.codeAction.showDocumentation": { // 代码操作显示文档
+    "enable": true // 启用
   },
-  "eslint.quiet": true,
-  "eslint.validate": [
+  "eslint.quiet": true, // 静默模式(只显示错误)
+  "eslint.validate": [ // 需要验证的文件类型
     "javascript",
     "typescript",
     "javascriptreact",
@@ -101,19 +112,22 @@
     "jsonc",
     "json5"
   ],
-  "cSpell.allowCompoundWords": true,
-  "cSpell.language": "en,en-US",
-  "css.lint.hexColorLength": "ignore",
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.menus": {
+  // cSpell拼写检查设置
+  "cSpell.allowCompoundWords": true, // 允许复合词
+  "cSpell.language": "en,en-US", // 拼写检查语言
+  // CSS设置
+  "css.lint.hexColorLength": "ignore", // 忽略十六进制颜色长度警告
+  // GitLens设置
+  "gitlens.codeLens.authors.enabled": false, // 禁用作者代码镜头
+  "gitlens.codeLens.enabled": false, // 禁用所有代码镜头
+  "gitlens.codeLens.recentChange.enabled": false, // 禁用最近变更代码镜头
+  "gitlens.menus": { // GitLens菜单设置
     "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "history": false,
-      "remote": false
+      "blame": false, // 禁用编辑器内责备
+      "clipboard": true, // 启用剪贴板操作
+      "compare": true, // 启用比较操作
+      "history": false, // 禁用历史操作
+      "remote": false // 禁用远程操作
     },
     "editorGroup": {
       "blame": true,
@@ -150,6 +164,18 @@
       "stash": true
     }
   },
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false
+  // JavaScript/TypeScript格式化设置
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false, // 空大括号内不加空格
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false, // 同上
+  // 差异编辑器设置
+  "diffEditor.ignoreTrimWhitespace": false, // 不忽略修剪空白
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false, // 空间有限时不使用内联视图
+  // 工作区安全设置
+  "security.workspace.trust.untrustedFiles": "open", // 打开不受信任的文件
+  // 终端字体设置
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono", // 终端字体
+  // MDX文件设置
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx" // MDX默认格式化工具
+  }
 }
