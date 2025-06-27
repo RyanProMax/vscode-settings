@@ -177,5 +177,6 @@
   // MDX文件设置
   "[mdx]": {
     "editor.defaultFormatter": "unifiedjs.vscode-mdx" // MDX默认格式化工具
-  }
+  },
+  "editor.wordWrap": "on"
 }
